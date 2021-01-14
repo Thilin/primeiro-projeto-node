@@ -1,5 +1,4 @@
 import 'reflect-metadata';
-import '../../container/providers';
 import express, {Request, Response, NextFunction} from 'express';
 import 'express-async-errors';
 import routes from "./routes";
@@ -10,7 +9,7 @@ import AppError from "@shared/errors/AppError";
 
 const app = express();
 app.use(express.json());
-app.use('/files', express.static(uploadConfig.directory));
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use(routes);
 
 app.use((err: Error, request: Request, response: Response, next: NextFunction) =>{
