@@ -1,11 +1,6 @@
 import 'reflect-metadata';
 import FakeUserRepository from "@modules/users/repositories/fakes/FakeUserRepository";
-// import AuthenticateUserService from "@modules/users/services/AuthenticateUserService";
-// import CreateUserService from "@modules/users/services/CreateUserService";
-// import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider';
 import AppError from "@shared/errors/AppError";
-
-// import FakeUsersRepository from '../repositories/fakes/FakeUsersRepository';
 import FakeHashProvider from '../providers/HashProvider/fakes/FakeHashProvider';
 import AuthenticateUserService from './AuthenticateUserService';
 import CreateUserService from './CreateUserService';
